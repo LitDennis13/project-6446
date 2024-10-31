@@ -1,0 +1,66 @@
+Important thing
+    check if user is logged if, not not redirect to login page (User Authentication) 
+
+HOME BUTTON
+    goes to main calendar tab and puts it to day view
+
+MAIN BAR
+Main Calendar tab
+    Event and Tasks
+        details
+            name
+            description
+            time
+            repeat
+            location
+            specific calendar name 
+            specific calendar type
+            color coding
+        Extra
+            Events have todo lists
+            Events have additional notes
+        How it shows up on calendar
+            event name
+            timing
+
+    Make sure UI can handle multiple event collisions
+    View change
+        day view
+        three day view
+        work day view
+        week view
+        month view
+
+
+Specific Calendars
+    events that will be part of a named group the user can create
+    events can be one time only, or be recurring for however long
+    shows how many events for each "type" is left
+    color coding
+    SPECIAL CALENDARS
+        School Semesters
+            will expand on the special calendar
+            will have a classes period
+            adds exam events
+            adds assignment events
+
+Tasks List
+    
+Notes tab
+    Will have general notes
+    Will have all notes attached to an event
+Todo tab
+    Will have general todos
+    Will have all todos attached to an event
+
+SIDE BAR
+    Calendar List
+        Lists normal and any special calendars
+
+bottom
+(account profile picture + account name + settings button)
+
+NOTIFICATIONS
+
+DATABASE TABLE
+
