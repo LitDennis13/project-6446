@@ -1,6 +1,10 @@
 Important thing
     check if user is logged if, not not redirect to login page (User Authentication) 
 
+SIDE BAR
+    Calendar List
+        Lists normal and any special calendars
+
 HOME BUTTON
     goes to main calendar tab and puts it to day view
 
@@ -53,9 +57,6 @@ Todo tab
     Will have general todos
     Will have all todos attached to an event
 
-SIDE BAR
-    Calendar List
-        Lists normal and any special calendars
 
 bottom
 (account profile picture + account name + settings button)
