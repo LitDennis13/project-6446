@@ -3,7 +3,7 @@
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
-    column-gap: 2vw;
+    column-gap: min(1.5vh, 1.5vw);
     justify-content: space-around;
     align-items: center;
 }
@@ -13,17 +13,21 @@
     width: 100%;
     background-color: rgb(45, 96, 183);
     border: none;
-    border-radius: 32px;
     font-size: 2vw;
     font-weight: bold;
+    border: 2px solid rgb(45, 96, 183);
 }
 
 
 .top-bar > button:hover {
-    background-color: rgb(65,65,65);
-    transition: background-color .2s ease-in;
+    background-color: rgb(29, 77, 160);
+    border: 2px solid rgb(256, 256, 256);
+    transition: background-color .1s ease-in;
+    transition: border .1s ease-in;
 }
 .top-bar > button:active {
-    background-color: rgb(80,80,80);
-    transition: background-color .2s ease-in;
+    background-color: rgb(12, 61, 145);
+    border: 2px solid rgb(199, 199, 199);
+    transition: background-color .1s ease-in;
+    transition: border .1s ease-in;
 }

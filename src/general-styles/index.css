@@ -13,5 +13,5 @@
 #root {
     height: 100vh;
     width: 100vw;
-    padding: 1vh 1vw 1vh;
+    padding: min(1.5vh, 1.5vw);
 }

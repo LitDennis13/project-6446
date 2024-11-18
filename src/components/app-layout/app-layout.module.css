@@ -3,8 +3,8 @@
     width: 100%;
     display: grid;
     grid-template: 1fr 15fr 2.5fr / 1fr 5fr;
-    row-gap: 3vh;
-    column-gap: 2vw;
+    row-gap: min(1.5vh, 1.5vw);
+    column-gap: min(1.5vh, 1.5vw);
 }
 
 .top-bar {

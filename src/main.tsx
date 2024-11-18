@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import { RouterProvider } from "react-router-dom";
 import { Provider } from "react-redux";
 
-import { userData } from "./user-data/state.ts";
+import { state } from "./state/state.js";
 
 import router from "./routes.tsx";
 
@@ -12,7 +12,7 @@ import "./general-styles/josh-comeau-css-reset.css"
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <Provider store={userData}>
+    <Provider store={state}>
       <RouterProvider router={router}/>
     </Provider>
     

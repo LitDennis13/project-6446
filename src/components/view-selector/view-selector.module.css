@@ -1,0 +1,50 @@
+
+.view-selector {
+    position: relative;
+    height: calc(80% * 5 + 7vh);
+    width: 110%;
+    right: 10%;
+    bottom: .5vw;
+    display: flex;
+    flex-flow: column nowrap;
+    border: none;
+    background-color: rgb(30,30,30);
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3vw;
+    column-gap: .5vw;
+    padding: .5vw;
+}
+
+.view-display, .view-display-on-selector {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    border: none;
+    background-color: rgb(37,40,45);
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3vw;
+    column-gap: .5vw;
+}
+
+
+
+.view-display:hover, .view-display-on-selector:hover {
+    background-color: rgb(69, 73, 83);
+    transition: background-color .1s ease-in;
+}
+
+.view-display > img, .view-display-on-selector > img {
+    height: 80%;
+    width: auto;
+}
+
+.view-display-on-selector {
+    height: 80%;
+    width: 100%;
+    font-size: 1.3vw;
+    background-color: inherit;
+}
