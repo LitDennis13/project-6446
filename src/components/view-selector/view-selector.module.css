@@ -1,9 +1,24 @@
+.display {
+    /*height: 80%;*/
+    height: 80%;
+    width: 100%;
+    display: flex;
+    border: none;
+    background-color: rgb(37,40,45);
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3vw;
+    transform: scaleY(1);
+    
+}
 
-.view-selector {
+.display:hover {
     position: relative;
     height: calc(80% * 5 + 7vh);
-    width: 110%;
-    right: 10%;
+    transition: max-height .2s ease-in;
+    width: 100%;
+    
     bottom: .5vw;
     display: flex;
     flex-flow: column nowrap;
@@ -17,6 +32,31 @@
     padding: .5vw;
 }
 
+.option {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    border: none;
+    background-color: rgb(37,40,45);
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3vw;
+    column-gap: .5vw;
+}
+
+.option > img {
+    height: 80%;
+    width: auto;
+}
+
+.option:hover {
+    background-color: rgb(69, 73, 83);
+    transition: background-color .1s ease-in;
+}
+
+
+/*
 .view-display, .view-display-on-selector {
     height: 80%;
     width: 100%;
@@ -32,19 +72,13 @@
 
 
 
-.view-display:hover, .view-display-on-selector:hover {
-    background-color: rgb(69, 73, 83);
-    transition: background-color .1s ease-in;
-}
 
-.view-display > img, .view-display-on-selector > img {
-    height: 80%;
-    width: auto;
-}
+
+
 
 .view-display-on-selector {
     height: 80%;
     width: 100%;
     font-size: 1.3vw;
     background-color: inherit;
-}
+}*/
