@@ -54,21 +54,20 @@ function setNewViewOption(option: string, dispatcher: AppDispatch): void {
 function displayAllViewOptions(currentView: string, dispatcher: AppDispatch): JSX.Element {
     let allViewOptions = ["Day", "ThreeDay", "WorkWeek", "Week", "Month"];
     allViewOptions = putOptionAtBeginning(allViewOptions, currentView);
-    return <div className={styles["display"]}>
+    return <>
         {allViewOptions.map((option, index) => {
             return <button key={"Option"+index} className={styles["option"]} onClick={() => {setNewViewOption(option, dispatcher)}}> {getViewOption(option)} </button>
         })}
-    </div>;
+    </>;
 }
 
 function ViewSelector() {
     const currentView = useSelector((state: RootState) => state.viewSelection.currentView);
     const selectMode = useSelector((state: RootState) => state.viewSelection.selector);
     const dispatch = useDispatch<AppDispatch>();
-    
 
-    return <div className={styles["display"]} onMouseOver={() => dispatch(ChangeMode(true))} onMouseLeave={() => dispatch(ChangeMode(false))}>
-        {!selectMode && <button className={styles["option"]} onClick={() => dispatch(ChangeMode(true))}> {getViewOption(currentView)} </button> }
+    return <div className={selectMode !== true ? styles["single-option"] : styles["multiple-options"]} onMouseOver={() => dispatch(ChangeMode(true))} onMouseLeave={() => dispatch(ChangeMode(false))}>
+        {!selectMode && <button className={styles["option"]} onClick={() => dispatch(ChangeMode(true))}> {getViewOption(currentView)} </button>}
         {selectMode && displayAllViewOptions(currentView, dispatch)}
     </div>;
 }

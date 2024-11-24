@@ -1,34 +1,28 @@
-.display {
-    /*height: 80%;*/
-    height: 80%;
-    width: 100%;
+.single-option, .multiple-options {
     display: flex;
     border: none;
-    background-color: rgb(37,40,45);
     border-radius: 8px;
-    justify-content: center;
     align-items: center;
     font-size: 1.3vw;
-    transform: scaleY(1);
-    
 }
 
-.display:hover {
-    position: relative;
-    height: calc(80% * 5 + 7vh);
-    transition: max-height .2s ease-in;
+.single-option {
+    height: 80%;
     width: 100%;
-    
-    bottom: .5vw;
-    display: flex;
-    flex-flow: column nowrap;
-    border: none;
-    background-color: rgb(30,30,30);
-    border-radius: 8px;
+    background-color: rgb(37,40,45);
     justify-content: center;
-    align-items: center;
-    font-size: 1.3vw;
-    column-gap: .5vw;
+}
+
+.multiple-options {
+    position: relative;
+    right: 5%;
+    bottom: .5vw;
+    height: calc(80% * 5 + 6vh + 1vw);
+    width: calc(100% + 1vw);
+    flex-flow: column nowrap;
+    background-color: rgb(30,30,30);
+    justify-content: start;
+    row-gap: 1vh;
     padding: .5vw;
 }
 
@@ -46,6 +40,11 @@
 }
 
 .option > img {
+    height: 110%;
+    width: auto;
+}
+
+.multiple-options > .option > img {
     height: 80%;
     width: auto;
 }
@@ -54,6 +53,8 @@
     background-color: rgb(69, 73, 83);
     transition: background-color .1s ease-in;
 }
+
+
 
 
 /*
