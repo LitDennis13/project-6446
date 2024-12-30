@@ -1,15 +1,14 @@
 .single-option, .multiple-options {
     display: flex;
     border: none;
-    border-radius: 8px;
     align-items: center;
-    font-size: 1.3vw;
 }
 
 .single-option {
-    height: 80%;
+    height: 100%;
     width: 100%;
-    background-color: rgb(37,40,45);
+    /*background-color: rgb(37,40,45);*/
+    background-color: rgb(45, 96, 183);
     justify-content: center;
 }
 
@@ -17,7 +16,7 @@
     position: relative;
     right: 5%;
     bottom: .5vw;
-    height: calc(80% * 5 + 6vh + 1vw);
+    height: calc(75% * 5 + 6vh + 1vw);
     width: calc(100% + 1vw);
     flex-flow: column nowrap;
     background-color: rgb(30,30,30);
@@ -31,16 +30,15 @@
     width: 100%;
     display: flex;
     border: none;
-    background-color: rgb(37,40,45);
-    border-radius: 8px;
+    background-color: inherit;
     justify-content: center;
     align-items: center;
-    font-size: 1.3vw;
+    font-size: .9vw;
     column-gap: .5vw;
 }
 
 .option > img {
-    height: 110%;
+    height: 100%;
     width: auto;
 }
 
