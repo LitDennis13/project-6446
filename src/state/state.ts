@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit"; 
-import ChangeViewReducer from "./global-state/change-view-slice";
+import CalendarViewReducer from "./global-state/calendar-view/calendar-view-slice";
+import AppViewReducer from "./global-state/app-view/app-view-slice";
 
 export const state = configureStore({
     reducer: {
-        viewSelection : ChangeViewReducer
+        appViewSelection: AppViewReducer,
+        calendarViewSelection : CalendarViewReducer
     },
 });
 

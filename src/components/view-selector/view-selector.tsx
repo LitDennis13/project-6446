@@ -7,7 +7,7 @@ import MonthIcon from "../../icons/monthViewIcon.svg";
 import WeekViewIcon from "../../icons/weekViewIcon.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "../../state/state";
-import { ChangeMode, SetCurrentView } from "../../state/global-state/change-view-slice";
+import { ChangeMode, SetCurrentView } from "../../state/global-state/calendar-view/calendar-view-slice";
 
 function putOptionAtBeginning(arr: string[], option: string): string[] {
     for (let i = 0; i < arr.length; i++) {
@@ -62,8 +62,8 @@ function displayAllViewOptions(currentView: string, dispatcher: AppDispatch): JS
 }
 
 function ViewSelector() {
-    const currentView = useSelector((state: RootState) => state.viewSelection.currentView);
-    const selectMode = useSelector((state: RootState) => state.viewSelection.selector);
+    const currentView = useSelector((state: RootState) => state.calendarViewSelection.currentView);
+    const selectMode = useSelector((state: RootState) => state.calendarViewSelection.selector);
     const dispatch = useDispatch<AppDispatch>();
 
     return <div className={selectMode !== true ? styles["single-option"] : styles["multiple-options"]} onMouseOver={() => dispatch(ChangeMode(true))} onMouseLeave={() => dispatch(ChangeMode(false))}>
