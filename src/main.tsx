@@ -5,10 +5,14 @@ import { Provider } from "react-redux";
 
 import { state } from "./state/state.js";
 
-import router from "./routes.tsx";
+import router from "./routes/routes.tsx";
 
 import "./general-styles/index.css"
 import "./general-styles/josh-comeau-css-reset.css"
+
+//test
+import "./calendar-class/calendar-class.ts"
+//test
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>

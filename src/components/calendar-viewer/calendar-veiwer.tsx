@@ -5,6 +5,7 @@ import arrowIcon from "../../icons/arrowIcon.svg";
 
 
 import ViewSelector from "../view-selector/view-selector";
+import DayView from "../view-components/day-view/day-view";
 
 function CalendarViewer() {
 
@@ -16,13 +17,15 @@ function CalendarViewer() {
                 <button className={styles["arrow-button-forward"]}><img src={arrowIcon} alt="Move Calendar Forward Button" /></button>
             </div>
             
-            <p className={styles["info"]}>November 2024</p>
+            <p className={styles["info"]}>January 2025</p>
 
             <div className={styles["view-selection"]}>
                 <ViewSelector />
             </div>
         </div>
-        <div className={styles["calendar-view-port"]}></div>
+        <div className={styles["calendar-view-port"]}>
+            <DayView/>
+        </div>
     </div>
 }
 

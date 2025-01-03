@@ -22,7 +22,6 @@ Main Calendar tab
             color coding
         Extra
             Events have todo lists
-            Events have additional notes
         How it shows up on calendar
             event name
             timing
